@@ -8,8 +8,8 @@ diff -ur ./asterisk_unchanged/extensions.conf ./asterisk/extensions.conf
 +
 +[outgoing]
 +exten => _X.,1,Dial(SIP/${EXTEN})
-+;exten => _X.,n,Answer()
-+exten => _X.,n,Hangup()
++exten => _X.,n,Answer()
++;exten => _X.,n,Hangup()
 diff -ur ./asterisk_unchanged/http.conf ./asterisk/http.conf
 --- ./asterisk_unchanged/http.conf	2015-06-08 21:27:32.000000000 +0300
 +++ ./asterisk/http.conf	2015-06-08 22:52:17.000000000 +0300
@@ -63,7 +63,7 @@ diff -ur ./asterisk_unchanged/sip.conf ./asterisk/sip.conf
                                  ; Default is enabled. The Dial() options 't' and 'T' are not
                                  ; related as to whether SIP transfers are allowed or not.
 -;realm=mydomain.tld             ; Realm for digest authentication
-+realm=172.25.10.69              ; Realm for digest authentication
++realm=192.168.56.2              ; Realm for digest authentication
                                  ; defaults to "asterisk". If you set a system name in
                                  ; asterisk.conf, it defaults to that system name
                                  ; Realms MUST be globally unique according to RFC 3261
