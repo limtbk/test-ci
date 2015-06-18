@@ -9,5 +9,8 @@ yum -y install wget patch httpd zip unzip mc systemctl
 
 chkconfig httpd on
 
+/etc/init.d/iptables stop
+chkconfig iptables off
+
 # iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 # /etc/init.d/iptables save
