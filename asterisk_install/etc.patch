@@ -64,7 +64,7 @@ diff -ur ./etc_orig/asterisk/sip.conf ./etc/asterisk/sip.conf
                                  ; Default is enabled. The Dial() options 't' and 'T' are not
                                  ; related as to whether SIP transfers are allowed or not.
 -;realm=mydomain.tld             ; Realm for digest authentication
-+realm=172.25.10.69              ; Realm for digest authentication
++realm=192.168.56.2              ; Realm for digest authentication
                                  ; defaults to "asterisk". If you set a system name in
                                  ; asterisk.conf, it defaults to that system name
                                  ; Realms MUST be globally unique according to RFC 3261
@@ -179,7 +179,7 @@ diff -ur ./etc_orig/httpd/conf/httpd.conf ./etc/httpd/conf/httpd.conf
  # redirections work in a sensible way.
  #
 -#ServerName www.example.com:80
-+ServerName 172.25.10.69:80
++ServerName 192.168.56.2:80
  
  #
  # UseCanonicalName: Determines how Apache constructs self-referencing 
