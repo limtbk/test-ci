@@ -219,27 +219,6 @@ diff -ur ./etc_orig/httpd/conf/httpd.conf ./etc/httpd/conf/httpd.conf
  
  #
  # AddType allows you to add to or override the MIME configuration
-Only in ./etc/httpd/conf.d: ssl.conf
-Only in ./etc_orig/httpd/conf.d: welcome.conf
-Only in ./etc/httpd/logs: access_log
-Only in ./etc/httpd/logs: access_log-20150614
-Only in ./etc/httpd/logs: error_log
-Only in ./etc/httpd/logs: error_log-20150614
-Only in ./etc/httpd/logs: ssl_access_log
-Only in ./etc/httpd/logs: ssl_access_log-20150614
-Only in ./etc/httpd/logs: ssl_error_log
-Only in ./etc/httpd/logs: ssl_request_log
-Only in ./etc/httpd/logs: ssl_request_log-20150614
-Only in ./etc/httpd/modules: mod_ssl.so
-Only in ./etc/httpd/run: httpd.pid
-diff -ur ./etc_orig/sysconfig/grub ./etc/sysconfig/grub
---- ./etc_orig/sysconfig/grub
-+++ ./etc/sysconfig/grub
-@@ -1,2 +1,2 @@
--boot=/dev/sda
-+boot=/dev/sde
- forcelba=0
-diff -ur ./etc_orig/sysconfig/iptables ./etc/sysconfig/iptables
 --- ./etc_orig/sysconfig/iptables
 +++ ./etc/sysconfig/iptables
 @@ -1,13 +1,14 @@
